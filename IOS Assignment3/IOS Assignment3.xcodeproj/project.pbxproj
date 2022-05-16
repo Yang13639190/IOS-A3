@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181DA2ED28328FF700479250 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DA2EC28328FF700479250 /* HomeCell.swift */; };
 		5872D851283130A100088119 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872D846283130A100088119 /* UserInfo.swift */; };
 		5872D852283130A100088119 /* TableHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872D847283130A100088119 /* TableHeaderViewCell.swift */; };
 		5872D853283130A100088119 /* XYChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872D848283130A100088119 /* XYChatViewController.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181DA2EC28328FF700479250 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		5872D846283130A100088119 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		5872D847283130A100088119 /* TableHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderViewCell.swift; sourceTree = "<group>"; };
 		5872D848283130A100088119 /* XYChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYChatViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				8B1B45E0282D31AA00C9BEE3 /* LoginViewController.swift */,
 				8B1B45D0282D2F8200C9BEE3 /* HomeViewController.swift */,
 				8B1B45D4282D301E00C9BEE3 /* Home.storyboard */,
+				181DA2EC28328FF700479250 /* HomeCell.swift */,
 				8B1B45D6282D30A700C9BEE3 /* MyselfController.swift */,
 				8B1B45D8282D30B500C9BEE3 /* Myself.storyboard */,
 				8B1B45DA282D30CE00C9BEE3 /* CharViewController.swift */,
@@ -332,6 +335,7 @@
 			files = (
 				8B1B45D7282D30A700C9BEE3 /* MyselfController.swift in Sources */,
 				725BBF5928291D6000EFA377 /* ViewController.swift in Sources */,
+				181DA2ED28328FF700479250 /* HomeCell.swift in Sources */,
 				5872D859283130A100088119 /* MessageItem.swift in Sources */,
 				5872D853283130A100088119 /* XYChatViewController.swift in Sources */,
 				5872D85A283130A100088119 /* ChatDataSource.swift in Sources */,
