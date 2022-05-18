@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="course" rowHeight="100" id="rB7-wj-QJ0" customClass="CourseCell" customModule="RainbowClass" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="course" rowHeight="100" id="rB7-wj-QJ0" customClass="HomeCell" customModule="IOS_Assignment3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rB7-wj-QJ0" id="yvU-ZN-4bq">
@@ -94,13 +94,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UJ0-Pt-7eW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2202.898550724638" y="239.73214285714283"/>
+            <point key="canvasLocation" x="2094" y="-504"/>
         </scene>
-        <!--课程-->
+        <!--home-->
         <scene sceneID="p88-ah-REI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a5r-WI-V8W" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="课程" image="kecheng-" selectedImage="kecheng" id="TlA-PJ-HPJ"/>
+                    <tabBarItem key="tabBarItem" title="home" image="home" selectedImage="home_top" id="TlA-PJ-HPJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="78U-Nf-SnL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -113,13 +113,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="skh-1n-9kf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1426" y="222"/>
+            <point key="canvasLocation" x="1212" y="-507"/>
         </scene>
     </scenes>
     <resources>
         <image name="class" width="1216" height="862"/>
-        <image name="kecheng" width="16" height="13"/>
-        <image name="kecheng-" width="16" height="16"/>
+        <image name="home" width="20" height="20"/>
+        <image name="home_top" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

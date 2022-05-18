@@ -15,7 +15,7 @@ class CharViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
@@ -26,4 +26,30 @@ class CharViewController: UIViewController {
     }
     */
 
+}
+
+extension CharViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "course") as! CharCell
+//        print(String.init(format: "%p", cell))
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let videoVC = XYChatViewController()
+        videoVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(videoVC, animated: true)
+    }
 }

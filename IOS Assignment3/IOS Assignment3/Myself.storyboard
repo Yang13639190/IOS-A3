@@ -7,11 +7,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--我的-->
+        <!--My-->
         <scene sceneID="N5H-9v-yxz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xt0-Kl-88X" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" image="wode_1" selectedImage="wode" id="IBJ-nV-6fr"/>
+                    <tabBarItem key="tabBarItem" title="My" image="my_top" selectedImage="my" id="IBJ-nV-6fr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4y4-VA-lcd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-1659" y="572"/>
         </scene>
-        <!--我的-->
+        <!--My-->
         <scene sceneID="rrh-HI-UKv">
             <objects>
-                <tableViewController storyboardIdentifier="MyselfController" id="KTX-J8-Bos" customClass="MyselfController" customModule="RainbowClass" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MyselfController" id="KTX-J8-Bos" customClass="MyselfController" customModule="IOS_Assignment3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="gel-Sl-Hu7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,8 +89,8 @@
                                                         <constraint firstAttribute="width" constant="20" id="aKK-ND-53O"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的收藏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpT-VZ-8l8">
-                                                    <rect key="frame" x="64" y="19" width="58" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpT-VZ-8l8">
+                                                    <rect key="frame" x="64" y="19" width="86" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Beu-AI-Ofe"/>
                                                     </constraints>
@@ -123,8 +123,8 @@
                                                         <constraint firstAttribute="height" constant="20" id="hDn-gP-hyi"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单词本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmJ-a7-s64">
-                                                    <rect key="frame" x="64" y="19" width="43" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmJ-a7-s64">
+                                                    <rect key="frame" x="64" y="19" width="70.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="5i6-kt-c7X"/>
                                                     </constraints>
@@ -157,8 +157,8 @@
                                                         <constraint firstAttribute="height" constant="20" id="nnX-YY-Kgf"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="离线缓存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfK-QJ-XNp">
-                                                    <rect key="frame" x="64" y="19" width="57.5" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offline caching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfK-QJ-XNp">
+                                                    <rect key="frame" x="64" y="19" width="98" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="hWg-vm-qUM"/>
                                                     </constraints>
@@ -191,8 +191,8 @@
                                                         <constraint firstAttribute="width" constant="20" id="drH-5o-HV8"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="调整学习兴趣" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kz0-YD-kkK">
-                                                    <rect key="frame" x="64" y="19" width="86" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adjust learning interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kz0-YD-kkK">
+                                                    <rect key="frame" x="64" y="19" width="149" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="sM0-GW-96W"/>
                                                     </constraints>
@@ -222,8 +222,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="清除缓存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIU-Fe-Tl7">
-                                                    <rect key="frame" x="64" y="19" width="58" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear the cache" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIU-Fe-Tl7">
+                                                    <rect key="frame" x="64" y="19" width="101.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="e3r-ZT-hyX"/>
                                                     </constraints>
@@ -267,8 +267,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帮助与反馈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7d-Xy-fzx">
-                                                    <rect key="frame" x="64" y="19" width="72" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help and Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7d-Xy-fzx">
+                                                    <rect key="frame" x="64" y="19" width="125" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="joc-Te-Sdf"/>
                                                     </constraints>
@@ -311,8 +311,8 @@
                                                         <constraint firstAttribute="width" constant="20" id="pVc-dc-srl"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前版本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meR-Zq-AAb">
-                                                    <rect key="frame" x="64" y="19" width="58" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The current version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meR-Zq-AAb">
+                                                    <rect key="frame" x="64" y="19" width="126" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="R5m-PL-von"/>
                                                     </constraints>
@@ -379,7 +379,7 @@
                             <outlet property="delegate" destination="KTX-J8-Bos" id="Mao-JG-QpD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="我的" id="jT2-aw-Upf"/>
+                    <navigationItem key="navigationItem" title="My" id="jT2-aw-Upf"/>
                     <connections>
                         <outlet property="headimage" destination="vpb-aD-PI6" id="jo1-LL-MbS"/>
                         <outlet property="loginbtn" destination="1hB-07-T2F" id="UO7-on-F0v"/>
@@ -398,9 +398,9 @@
         <image name="edit" width="40" height="40"/>
         <image name="help" width="40" height="40"/>
         <image name="man" width="90" height="90"/>
+        <image name="my" width="20" height="20"/>
+        <image name="my_top" width="20" height="20"/>
         <image name="versions" width="40" height="40"/>
-        <image name="wode" width="16" height="16"/>
-        <image name="wode_1" width="16" height="16"/>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

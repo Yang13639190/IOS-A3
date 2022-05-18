@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        // 设置估算高度
+        // Set the estimated height
         courseTableView.estimatedRowHeight = 100
         
     }
