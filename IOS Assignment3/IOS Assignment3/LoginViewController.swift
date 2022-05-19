@@ -31,19 +31,19 @@ class LoginViewController: UIViewController {
         
         if self.remerber.isOn{
             
-            UserDefaults.standard.setValue(self.name.text, forKey: "remembername")//记住账号
-            UserDefaults.standard.setValue(self.password.text, forKey: "rememberpassword")//记住密码
+            UserDefaults.standard.setValue(self.name.text, forKey: "remembername")//Remember account
+            UserDefaults.standard.setValue(self.password.text, forKey: "rememberpassword")//Remember the password
         }
         
         let name = self.name.text
         let pwd = self.password.text
         if name == "" {
-            alert(message: "账户不能为空")
+            alert(message: "The account cannot be empty")
             
             return;
         }
         if  pwd == "" {
-            alert(message: "密码不能为空")
+            alert(message: "The password cannot be empty")
             return;
         }
         
@@ -59,14 +59,14 @@ class LoginViewController: UIViewController {
                 UserDefaults.standard.setValue(self.name.text, forKey: "username")
                 if self.remerber.isOn{
                     
-                    UserDefaults.standard.setValue(self.name.text, forKey: "remembername")//记住账号
-                    UserDefaults.standard.setValue(self.password.text, forKey: "rememberpassword")//记住密码
+                    UserDefaults.standard.setValue(self.name.text, forKey: "remembername")//Remember account
+                    UserDefaults.standard.setValue(self.password.text, forKey: "rememberpassword")//Remember the password
                 }
                 UserDefaults.standard.synchronize()
                 
-                //延迟0.5秒
+                //0.5 seconds delay
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    //将当前的view视图给移除
+                    //Remove the current view
                     self.dismiss(animated: true)
                 }
                 
@@ -78,7 +78,7 @@ class LoginViewController: UIViewController {
         }
         
         
-        return alert(message: "账号密码错误或没有注册哦")
+        return alert(message: "Wrong password or not registered！")
     }
     @IBAction func registerClick(_ sender: Any) {
         let rvc = RegisterViewController()
@@ -89,7 +89,7 @@ class LoginViewController: UIViewController {
     override func loadView() {
         super.loadView()
         self.view.backgroundColor = UIColor.white
-        self.title = "登录";
+        self.title = "Login";
         self.login.layer.masksToBounds =  true
         self.login.layer.cornerRadius = 5
         
@@ -105,13 +105,13 @@ class LoginViewController: UIViewController {
     
     func alert(message: String){
       
-        let alert = UIAlertController(title:"提示",message:message,preferredStyle:UIAlertController.Style.alert)
+        let alert = UIAlertController(title:"Reminder",message:message,preferredStyle:UIAlertController.Style.alert)
       
-        let no  = UIAlertAction(title:"确定",style:UIAlertAction.Style.destructive,handler:{(alerts:UIAlertAction) -> Void in
-                print("确定")})
+        let no  = UIAlertAction(title:"Confirm",style:UIAlertAction.Style.destructive,handler:{(alerts:UIAlertAction) -> Void in
+                print("Confirm")})
             
-        let unKnown = UIAlertAction(title:"取消" ,style:UIAlertAction.Style.cancel,handler:{(alerts:UIAlertAction) -> Void in
-                print("取消")
+        let unKnown = UIAlertAction(title:"Cancel" ,style:UIAlertAction.Style.cancel,handler:{(alerts:UIAlertAction) -> Void in
+                print("Cancel")
             })
             
             
@@ -130,13 +130,13 @@ class LoginViewController: UIViewController {
         user.userName = name
     }
     
-    /// 用户
+    /// The user
     public struct User{
         
-        /// 用户名
+        /// The user
         public var userName: String?
         
-        /// 密码
+        /// password
         public var userPwd: String?
         
         public init(){
