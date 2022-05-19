@@ -27,7 +27,7 @@ class XYChatViewController: UIViewController, ChatDataSource,UITextFieldDelegate
     }
 }
 
-//MARK:设置输入框
+//MARK:Set input field
 extension XYChatViewController
 {
     func setupSendPanel()
@@ -54,7 +54,7 @@ extension XYChatViewController
         sendButton.addTarget(self, action:#selector(XYChatViewController.sendMessage) ,
                              for:UIControl.Event.touchUpInside)
         sendButton.layer.cornerRadius=6.0
-        sendButton.setTitle("发送", for:UIControl.State())
+        sendButton.setTitle("send", for:UIControl.State())
         sendView.addSubview(sendButton)
     }
     
@@ -69,7 +69,7 @@ extension XYChatViewController
         //composing=false
         let sender = txtMsg
         let thisChat =  MessageItem(body:(sender!.text! as NSString) as String, userInfo:me, date:Date(), mtype:ChatType.mine)
-        let thatChat =  MessageItem(body:("你说的是：\(sender!.text!)" as NSString) as String, userInfo:you, date:Date(), mtype:ChatType.someone)
+        let thatChat =  MessageItem(body:("It is as you say：\(sender!.text!)" as NSString) as String, userInfo:you, date:Date(), mtype:ChatType.someone)
         
         Chats.add(thisChat)
         Chats.add(thatChat)
@@ -82,7 +82,7 @@ extension XYChatViewController
     }
 }
 
-//MARK:设置聊天假数据以及数据源
+//MARK:Set up chat fake data and data source
 extension XYChatViewController
 {
     
@@ -90,24 +90,24 @@ extension XYChatViewController
      {
          self.tableView = TableView(frame:CGRect(x: 0, y: 20, width: self.view.frame.size.width, height: self.view.frame.size.height - 76), style: .plain)
          
-         //创建一个重用的单元格
+         //Create a cell for reuse
          self.tableView!.register(TableViewCell.self, forCellReuseIdentifier: "ChatCell")
          me = UserInfo(name:"Xiaoming" ,avatar:("xiaoming.png"))
          you  = UserInfo(name:"Xiaohua", avatar:("xiaohua.png"))
          
-         let zero =  MessageItem(body:"你好同学，你也是学习这个课程吗？", userInfo:you,  date:Date(timeIntervalSinceNow:-90096400), mtype:.someone)
+         let zero =  MessageItem(body:"Hello, are you also studying this course？", userInfo:you,  date:Date(timeIntervalSinceNow:-96400), mtype:.someone)
          
-         let zero1 =  MessageItem(body:"是的啊，你也是吗？", userInfo:me,  date:Date(timeIntervalSinceNow:-90086400), mtype:.mine)
+         let zero1 =  MessageItem(body:"Yeah, did you, too？", userInfo:me,  date:Date(timeIntervalSinceNow:-86400), mtype:.mine)
          
-         let first =  MessageItem(body:"这个图片真漂亮！", userInfo:me,  date:Date(timeIntervalSinceNow:-90000600), mtype:.mine)
+         let first =  MessageItem(body:"This is a beautiful picture！", userInfo:me,  date:Date(timeIntervalSinceNow:-70600), mtype:.mine)
          
-         let second =  MessageItem(image:UIImage(named:"xiaohua.png")!,userInfo:me, date:Date(timeIntervalSinceNow:-90000290), mtype:.mine)
+         let second =  MessageItem(image:UIImage(named:"xiaohua.png")!,userInfo:me, date:Date(timeIntervalSinceNow:-60290), mtype:.mine)
          
-         let third =  MessageItem(body:"谢谢，很高兴认识你呢！",userInfo:you, date:Date(timeIntervalSinceNow:-90000060), mtype:.someone)
+         let third =  MessageItem(body:"Thank you. It was nice meeting you",userInfo:you, date:Date(timeIntervalSinceNow:-60060), mtype:.someone)
          
-         let fouth =  MessageItem(body:"me，too",userInfo:me, date:Date(timeIntervalSinceNow:-90000020), mtype:.mine)
+         let fouth =  MessageItem(body:"me，too",userInfo:me, date:Date(timeIntervalSinceNow:-60020), mtype:.mine)
          
-         let fifth =  MessageItem(body:"我们大家可以相互交流",userInfo:you, date:Date(timeIntervalSinceNow:0), mtype:.someone)
+         let fifth =  MessageItem(body:"We can all communicate with each other",userInfo:you, date:Date(timeIntervalSinceNow:0), mtype:.someone)
          
 
          Chats = NSMutableArray()

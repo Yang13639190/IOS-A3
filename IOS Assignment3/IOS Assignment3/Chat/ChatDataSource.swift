@@ -8,8 +8,8 @@
 import Foundation
 
 protocol ChatDataSource {
-    /*返回对话记录中的全部行数*/
+    /*Returns the total number of lines in the conversation record*/
     func rowsForChatTable( _ tableView:TableView) -> Int
-    /*返回某一行的内容*/
+    /*Returns the contents of a row*/
     func chatTableView(_ tableView:TableView, dataForRow:Int)-> MessageItem
 }

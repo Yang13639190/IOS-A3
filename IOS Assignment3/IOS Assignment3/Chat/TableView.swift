@@ -15,9 +15,9 @@ enum ChatBubbleTypingType {
 
 class TableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     
-    // 聊天数据
+    // Chat data
     var bubbleSection: NSMutableArray!
-    // 数据源，与viewController交互数据
+    // The data source，with viewController Interactive data
     var chatDataSource: ChatDataSource!
     
     var snapInterval: TimeInterval!
@@ -68,15 +68,15 @@ class TableView: UITableView, UITableViewDelegate, UITableViewDataSource {
                 var last =  ""
                 
                 var currentSection = NSMutableArray()
-                // 创建一个日期格式器
+                // Create a date formatter
                 let dformatter = DateFormatter()
-                // 为日期格式器设置格式字符串
+                // Sets the format string for the date formatter
                 dformatter.dateFormat = "dd"
                 
                 for i in 0 ..< count
                 {
                     let data =  bubbleData[i] as! MessageItem
-                    // 使用日期格式器格式化日期，日期不同，就新分组
+                    // Use date formatter to format dates, different dates on new groups
                     let datestr = dformatter.string(from: data.date as Date)
                     if (datestr != last)
                     {
@@ -91,14 +91,14 @@ class TableView: UITableView, UITableViewDelegate, UITableViewDataSource {
         }
         super.reloadData()
         
-        //滑向最后一部分
+        //Slide to the last section
         let secno = self.bubbleSection.count - 1
         let indexPath =  IndexPath(row:(self.bubbleSection[secno] as AnyObject).count,section:secno)
         
         self.scrollToRow(at: indexPath,                at:UITableView.ScrollPosition.bottom,animated:true)
     }
     
-    //按日期排序方法
+    //Sort by date
     func sortDate(_ m1: Any, m2: Any) -> ComparisonResult {
         if((m1 as! MessageItem).date.timeIntervalSince1970 < (m2 as! MessageItem).date.timeIntervalSince1970)
         {
@@ -113,10 +113,10 @@ class TableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     
 }
 
-//MARK:数据源 & 代理方法
+//MARK: Data source & proxy method
 extension TableView {
     
-    //用于确定单元格的高度，如果此方法实现得不对，单元格与单元格之间会错位
+    //Used to determine the height of a cell. If this method is not implemented correctly, cells will be displaced from one another
     func tableView(_ tableView:UITableView,heightForRowAt indexPath:IndexPath)
         -> CGFloat {
         // Header

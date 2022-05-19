@@ -7,47 +7,47 @@
 
 import UIKit
 
-//消息类型，我的还是别人的
+//Message type, mine or someone else's
 enum ChatType {
     case mine
     case someone
 }
 
 class MessageItem {
-    // 用户信息
+    // The user information
     var userInfo: UserInfo
     
-    // 消息类型
+    // Message type
     var chatType: ChatType
     
-    // 消息时间
+    // The message of time
     var date:Date
     
-    // 内容视图，标签或者图片
+    // Content view, tag or image
     var view: UIView
     
-    // 内边距
+    // padding
     var insets: UIEdgeInsets
     
-    // 获取我的文本消息内容边距
+    // Gets my text message content margin
     class func getTextInsetsMine() -> UIEdgeInsets
     {
         return UIEdgeInsets(top: 9, left: 10, bottom: 9, right: 17)
     }
     
-    // 获取他人文本消息内容边距
+    // Gets the margin of someone else's text message content
     class func getTextInsetsSomeOne() -> UIEdgeInsets
     {
         return UIEdgeInsets(top: 9, left: 15, bottom: 9, right: 10)
     }
     
-    // 获取我的图片消息内容边距
+    // Gets my picture message content margin
     class func getImageInsetsMine() -> UIEdgeInsets
     {
         return UIEdgeInsets(top: 9, left: 10, bottom: 9, right: 17)
     }
     
-    // 获取他人图片消息内容边距
+    // Gets the margins of other people's picture message content
     class func getImageInsetsSomeOne() -> UIEdgeInsets
     {
         return UIEdgeInsets(top: 9, left: 15, bottom: 9, right: 10)
@@ -61,7 +61,7 @@ class MessageItem {
         self.insets = insets
     }
     
-    // 构造文本信息
+    // Constructing text information
     convenience init(body: String, userInfo: UserInfo, date: Date, mtype: ChatType)
     {
         let font = UIFont.systemFont(ofSize: 12.0, weight: .bold)
@@ -84,7 +84,7 @@ class MessageItem {
         
     }
     
-    // 构造图片消息
+    // Constructing picture messages
     convenience init(image: UIImage, userInfo: UserInfo, date:Date, mtype: ChatType)
     {
         var size = image.size

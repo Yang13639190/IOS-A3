@@ -9,13 +9,13 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
-    //消息内容视图
+    //Message content view
     var customView:UIView!
-    //消息背景
+    //News background
     var bubbleImage:UIImageView!
-    //头像
+    //Head portrait
     var avatarImage:UIImageView!
-    //消息数据结构
+    //Message data structure
     var msgItem:MessageItem!
     
 
@@ -57,14 +57,14 @@ class TableViewCell: UITableViewCell {
             self.avatarImage.layer.borderColor = UIColor(white: 0.0, alpha: 0.2).cgColor
             self.avatarImage.layer.borderWidth = 1.0
             
-            //计算x:别人头像，在左边，我的头像在右边
+            //Calculate X: Other people's heads on the left, my head on the right
             let avatarX: CGFloat = (type == .someone) ? 2 : self.frame.size.width - 52;
-            //头像居于消息顶部
+            //The avatar sits at the top of the message
             let avatarY: CGFloat = 0.0;
             self.avatarImage.frame = CGRect(x: avatarX, y: avatarY, width: 50, height: 50)
             self.addSubview(self.avatarImage)
             
-             //如果只有一行消息（消息框高度不大于头像）则将消息框居中于头像位置
+             //If there is only one line of messages (the height of the message box is no higher than the head), center the message box in the position of the head
             let delta = (50 - (self.msgItem.insets.top + self.msgItem.insets.bottom + self.msgItem.view.frame.size.height)) / 2
             if delta > 0 {
                 y = delta
@@ -81,7 +81,7 @@ class TableViewCell: UITableViewCell {
             self.customView.frame = CGRect(x: x + msgItem.insets.left, y: y + msgItem.insets.top, width: width, height: height)
             self.addSubview(self.customView)
             
-            //如果是别人的消息，在左边，如果是我输入的消息，在右边
+            //On the left if it's someone else's message, on the right if it's me
             if type == .mine {
                 self.bubbleImage.image = UIImage(named:"mebubble.png")!
                 .stretchableImage(withLeftCapWidth: 15, topCapHeight:25)
@@ -95,7 +95,7 @@ class TableViewCell: UITableViewCell {
         }
     }
     
-    // 让单元格宽度始终为屏幕宽
+    // Make the cell width always screen wide
     override var frame: CGRect {
         get {
             return super.frame
