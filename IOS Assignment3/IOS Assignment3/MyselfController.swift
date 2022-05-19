@@ -23,8 +23,8 @@ class MyselfController: UITableViewController {
         
         self.delayExecution()
        
-        //每秒钟刷新下登陆状态
-        var timer = Timer.scheduledTimer(timeInterval: TimeInterval(1), target: self, selector:#selector(self.delayExecution), userInfo: nil, repeats: true)
+        //Refresh login status every second
+        let timer = Timer.scheduledTimer(timeInterval: TimeInterval(1), target: self, selector:#selector(self.delayExecution), userInfo: nil, repeats: true)
 
 
         RunLoop.current.add(timer, forMode: .common)
@@ -49,14 +49,14 @@ class MyselfController: UITableViewController {
         if (username != nil){
             
             usernamelab.text = username
-            loginbtn.setTitle("退出登陆", for: UIControl.State.normal)
+            loginbtn.setTitle("Logged out", for: UIControl.State.normal)
                 
-            loginbtn.titleLabel?.text =  "退出登陆"
+            loginbtn.titleLabel?.text =  "Logged out"
         }
         else
         {
-            usernamelab.text = "未登录"
-            loginbtn.setTitle("登陆", for: UIControl.State.normal)
+            usernamelab.text = "not log in"
+            loginbtn.setTitle("Login", for: UIControl.State.normal)
            
         }
     }
@@ -64,10 +64,10 @@ class MyselfController: UITableViewController {
     
     @objc func delectusername() {
         
-        let alert = UIAlertController(title:"提示",message:"删除成功",preferredStyle:UIAlertController.Style.alert)
+        let alert = UIAlertController(title:"Reminder",message:"Delete the success",preferredStyle:UIAlertController.Style.alert)
       
-        let no  = UIAlertAction(title:"确定",style:UIAlertAction.Style.destructive,handler:{(alerts:UIAlertAction) -> Void in
-                print("确定")
+        let no  = UIAlertAction(title:"Confirm",style:UIAlertAction.Style.destructive,handler:{(alerts:UIAlertAction) -> Void in
+                print("Confirm")
             
             let userDefaults = UserDefaults.standard
             let dics = userDefaults.dictionaryRepresentation()
@@ -76,16 +76,16 @@ class MyselfController: UITableViewController {
 
             
             
-            //清楚当前登录信息
+            //Clear the current login information
             UserDefaults.standard.setValue(nil, forKey: "username")
             UserDefaults.standard.synchronize()
             
-            self.usernamelab.text = "未登录"
-            self.loginbtn.setTitle("登陆", for: UIControl.State.normal)
+            self.usernamelab.text = "not log in"
+            self.loginbtn.setTitle("Login", for: UIControl.State.normal)
         })
             
-        let unKnown = UIAlertAction(title:"取消" ,style:UIAlertAction.Style.cancel,handler:{(alerts:UIAlertAction) -> Void in
-                print("取消")
+        let unKnown = UIAlertAction(title:"Cancel" ,style:UIAlertAction.Style.cancel,handler:{(alerts:UIAlertAction) -> Void in
+                print("Cancel")
             })
             
             
@@ -106,21 +106,21 @@ class MyselfController: UITableViewController {
         
         if (username != nil){
             
-            let alert = UIAlertController(title:"提示",message:"是否退出登陆？",preferredStyle:UIAlertController.Style.alert)
+            let alert = UIAlertController(title:"Reminder",message:"Log out or not？",preferredStyle:UIAlertController.Style.alert)
           
-            let no  = UIAlertAction(title:"确定",style:UIAlertAction.Style.destructive,handler:{(alerts:UIAlertAction) -> Void in
+            let no  = UIAlertAction(title:"Confirm",style:UIAlertAction.Style.destructive,handler:{(alerts:UIAlertAction) -> Void in
                 
-                //清除当前登录信息
+                //Clear the current login information
                 UserDefaults.standard.setValue(nil, forKey: "username")
                 UserDefaults.standard.synchronize()
                 
-                self.usernamelab.text = "未登录"
-                self.loginbtn.setTitle("登陆", for: UIControl.State.normal)
+                self.usernamelab.text = "not log in"
+                self.loginbtn.setTitle("Login", for: UIControl.State.normal)
                 
             })
                 
-            let unKnown = UIAlertAction(title:"取消" ,style:UIAlertAction.Style.cancel,handler:{(alerts:UIAlertAction) -> Void in
-                    print("取消")
+            let unKnown = UIAlertAction(title:"Cancel" ,style:UIAlertAction.Style.cancel,handler:{(alerts:UIAlertAction) -> Void in
+                    print("Cancel")
                 })
                 
                 
@@ -134,12 +134,12 @@ class MyselfController: UITableViewController {
         }
         else
         {
-            //实例化一个登陆界面
+            //Instantiate a login interface
             let viewController = UIStoryboard(name: "Main", bundle: nil)
                 .instantiateViewController(withIdentifier: "LoginViewController") as UIViewController
-            //信息界面出现的动画方式
+            //How the information interface appears in animation
              viewController.modalTransitionStyle = UIModalTransitionStyle.coverVertical
-            //界面跳转
+            //Interface jump
              self.present(viewController, animated:true, completion:nil)
             
            

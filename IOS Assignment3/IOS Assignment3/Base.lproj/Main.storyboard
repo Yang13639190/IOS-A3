@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tME-yI-obs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dRw-gn-F9N">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment version="4864" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="E0W-9f-lL7">
             <objects>
-                <tabBarController storyboardIdentifier="ViewController1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dRw-gn-F9N" customClass="ViewController" customModule="IOS_Assignment3" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="dRw-gn-F9N" customClass="ViewController" customModule="IOS_Assignment3" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5ID-BY-u2c"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O1C-XG-DYn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -32,31 +33,31 @@
         <scene sceneID="jyU-xL-5e4">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="k49-oN-MH6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="home" selectedImage="home_top" id="3Kr-0v-QeH"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home_top" id="3Kr-0v-QeH"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RPr-jA-WuG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="-36"/>
+            <point key="canvasLocation" x="1010" y="-99"/>
         </scene>
         <!--Char-->
         <scene sceneID="en0-Zf-IQA">
             <objects>
                 <viewControllerPlaceholder storyboardName="Char" id="xac-Jo-H0T" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="聊天" image="char" selectedImage="char_top" id="nXF-j6-mFx" userLabel="课程"/>
+                    <tabBarItem key="tabBarItem" title="char" image="char" selectedImage="char_top" id="nXF-j6-mFx"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FV6-o7-cj5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="48"/>
+            <point key="canvasLocation" x="1025" y="-15"/>
         </scene>
         <!--Myself-->
         <scene sceneID="eDR-Ik-rL8">
             <objects>
                 <viewControllerPlaceholder storyboardName="Myself" id="T03-If-Sxp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我" image="my_top" selectedImage="my" id="uGp-V2-Ll7" userLabel="我"/>
+                    <tabBarItem key="tabBarItem" title="My" image="my_top" selectedImage="my" id="uGp-V2-Ll7" userLabel="我"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wh-tR-dJu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1009" y="127"/>
+            <point key="canvasLocation" x="995" y="82"/>
         </scene>
         <!--Wellcome-->
         <scene sceneID="UBf-J0-plS">
@@ -79,7 +80,7 @@
                                             <constraint firstAttribute="height" constant="63" id="vsY-hW-ICj"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter account" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EF0-px-RcS">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your account number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EF0-px-RcS">
                                         <rect key="frame" x="0.0" y="79" width="374" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="VIO-bG-92Q"/>
@@ -87,7 +88,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Edl-3g-gXC">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Edl-3g-gXC">
                                         <rect key="frame" x="0.0" y="129" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -102,7 +103,7 @@
                                                     <constraint firstAttribute="width" constant="49" id="Oyc-3J-pMg"/>
                                                 </constraints>
                                             </switch>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92L-Pd-ZDF">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember the password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92L-Pd-ZDF">
                                                 <rect key="frame" x="57" y="5.5" width="317" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20.5" id="hPt-7y-U20"/>
@@ -136,8 +137,12 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NE7-nH-pHy">
-                                <rect key="frame" x="347" y="609" width="47" height="30"/>
-                                <state key="normal" title="Sign in"/>
+                                <rect key="frame" x="314" y="609" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9Vi-3g-6u4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="iIP-5Q-zsB"/>
+                                </constraints>
+                                <state key="normal" title="Registered"/>
                                 <connections>
                                     <action selector="registerClick:" destination="tyM-FN-T9W" eventType="touchUpInside" id="2hI-Vz-adu"/>
                                 </connections>
@@ -158,14 +163,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fIt-Na-tzv" firstAttribute="top" secondItem="4P6-f7-OY9" secondAttribute="bottom" constant="232" id="2Ks-CO-Tye"/>
-                            <constraint firstItem="NE7-nH-pHy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JlU-F9-r53" secondAttribute="leading" symbolic="YES" id="8M9-GY-Guo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fIt-Na-tzv" secondAttribute="trailing" id="FnJ-uU-x8G"/>
+                            <constraint firstItem="JlU-F9-r53" firstAttribute="trailing" secondItem="NE7-nH-pHy" secondAttribute="trailing" constant="20" id="Jrs-Nw-qFa"/>
                             <constraint firstItem="fIt-Na-tzv" firstAttribute="leading" secondItem="hL1-Jm-Eby" secondAttribute="leadingMargin" id="PZS-Gz-BeK"/>
                             <constraint firstItem="JlU-F9-r53" firstAttribute="trailing" secondItem="q4G-bZ-pDy" secondAttribute="trailing" constant="20" id="Y4F-jP-kTp"/>
                             <constraint firstItem="fIt-Na-tzv" firstAttribute="centerY" secondItem="hL1-Jm-Eby" secondAttribute="centerY" id="cWn-Kn-1BY"/>
-                            <constraint firstItem="NE7-nH-pHy" firstAttribute="top" secondItem="fIt-Na-tzv" secondAttribute="bottom" constant="33" id="lch-gj-NRb"/>
+                            <constraint firstItem="NE7-nH-pHy" firstAttribute="top" secondItem="q4G-bZ-pDy" secondAttribute="bottom" constant="10" id="f2Y-qv-Sy1"/>
                             <constraint firstItem="q4G-bZ-pDy" firstAttribute="leading" secondItem="JlU-F9-r53" secondAttribute="leading" constant="20" id="mQB-FF-Agv"/>
-                            <constraint firstItem="fIt-Na-tzv" firstAttribute="trailing" secondItem="NE7-nH-pHy" secondAttribute="trailing" id="t7M-Kr-nDx"/>
+                            <constraint firstItem="NE7-nH-pHy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JlU-F9-r53" secondAttribute="leading" symbolic="YES" id="tUC-Or-Rno"/>
                             <constraint firstItem="q4G-bZ-pDy" firstAttribute="top" secondItem="JlU-F9-r53" secondAttribute="top" constant="471" id="wzm-x3-Xrd"/>
                         </constraints>
                     </view>
