@@ -54,8 +54,8 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let videoVC = VideoVC()
-//        videoVC.hidesBottomBarWhenPushed = true
-//        navigationController?.pushViewController(videoVC, animated: true)
+        let classVC = classTeamViewController()
+        classVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(classVC, animated: true)
     }
 }
